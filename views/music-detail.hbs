@@ -1,0 +1,79 @@
+<div class="box">
+<article class="media">
+    <div class="media-left">
+        <div>
+          <figure class="image is-128x128">
+              <img id="music-cover" src="{{ base64Data }}" alt="Image"/>
+          </figure>
+        </div>
+        <div class="control upload-img-button hide-tag">
+            <button class="button is-small" id="updateImgButton">Upload Image</button>
+        </div>
+        <div id="uploadImgBox" class = "hide-tag">
+          <input class="input" id="uploadImgFile" type="file" name="file"/>
+        </div>
+    </div>
+    <div class="media-content">
+        <div class="content">
+            <div class="field">
+                <label class="label is-left">Music</label>
+                <div class="control">
+                    <input class="input is-small" id="music-title" type="text" placeholder="Input the music" value="{{ title }}" disabled/>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="field">
+                <label class="label is-left">Artist</label>
+                <div class="control">
+                    <input class="input is-small" id="artist" type="text" placeholder="input the artist" value="{{ artist }}" disabled/>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="field">
+                <label class="label is-left">Album</label>
+                <div class="control">
+                    <input class="input is-small" id="album" type="text" placeholder="Input the album" value="{{ album }}" disabled/>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p><br> </p>
+            <hr></hr>
+        </div>
+        <div class="content">
+            <div class="field">
+                <label class="label is-left">Waveform</label>
+                <div>
+                    <div><p id="waveform"></p></div>
+                    <div><p id="wave-timeline"></p></div>
+                </div>
+            </div>
+        </div>
+        <div style="display: block;">
+          <div class="field is-grouped" style="float:left;">
+              <div class="control">
+                  <button class="button is-small is-primary" id="editButton">Edit</button>
+              </div>
+              <div class="control">
+                  <button class="button is-small is-primary" id="updateButton" disabled>Update</button>
+              </div>
+              <div class="control">
+                  <button class="button is-small is-primary" id="downloadButton">Download</button>
+                  <div id="downloadLink" ><a class="hide-tag" href=""></a></div>
+              </div>
+          </div>
+          <div class="field is-grouped buttons-right">
+              <div class="control">
+                  <button class="button is-small is-primary" id="playButton">Play/Pause</button>
+              </div>
+              <div class="control" id="startEnd">
+                  <button class="button is-small is-primary" id="selectButton" disabled>Cut Start</button>
+              </div>
+          </div>
+        </div>
+    </div>
+</article>
+</div>

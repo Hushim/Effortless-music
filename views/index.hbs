@@ -1,0 +1,48 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{title}}
+      </h1>
+      <h2 class="subtitle">
+        Welcome to {{title}}
+      </h2>
+    </div>
+  </div>
+</section>
+
+<form action="/upload-file-form" enctype="multipart/form-data" method="post" id="upload-file-form">
+
+  <div class="file has-name is-boxed" id="file-input">
+    <label id="file-label" class="file-label">
+      <input class="file-input" id="uploadFileField" type="file" name="uploadFileField">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fa fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Choose a file…
+        </span>
+      </span>
+      <span class="file-name">
+        ...
+      </span>
+    </label>
+  </div>
+
+  <div class="column">
+    <input class="is-primary" type="button" value="Upload" id="uploadFileButton" />
+  </div>
+</form>
+
+<section>
+    <div id="responsedData"></div>
+</section>
+
+
+
+<div id="bottom">
+  <p>
+    <strong>Effortless Music</strong> by CSCI 5117 Effortless HTZL Team. Background image acquired from pixabay.com.
+  </p>
+</div>

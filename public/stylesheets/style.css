@@ -1,0 +1,55 @@
+html {
+  background: url("/pictures/music.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.box {
+  margin-top: 5%;
+}
+
+#file-input > label {
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bottom {
+  position: fixed;
+  bottom: 5px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.buttons-right {
+  float: right;
+}
+
+.upload-img-button {
+  left: 10%;
+}
+
+.hide-tag {
+  display: none;
+}
+
+.top-form {
+  margin-top: 50px;
+}
+
+form {
+  text-align: center;
+}
